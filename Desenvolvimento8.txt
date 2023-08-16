@@ -9,17 +9,27 @@ B: Veículos com quatro rodas, que acomodam até oito pessoas e seu peso é de a
 C: Veículos com quatro rodas ou mais e com peso entre 3500 e 6000 kg;
 D: Veículos com quatro rodas ou mais e que acomodam mais de oito pessoas; E: Veículos com quatro rodas ou mais e com mais de 6000 kg.
 
-Rodas = Inteiro
-Peso = Float
-Quantidade_pessoas = Inteiro
 
-if ( Rodas <= 3 ):
-	print("O seu veículo está na categoria de habilitação A!")
-elif ( Rodas = 4 ) and ( Quantidade_pessoas <= 8 ) and ( Peso <= 3500 ): 
-	print("O seu veículo está na categoria de habilitação B!")
-elif ( Rodas >= 4 ) and ( Quantidade_pessoas <= 8 ) and ( Peso > 3500 and < 6000 ):
-	print("O seu veículo está na categoria de habilitação C!")
-elif ( Rodas >= 4 ) and ( Quantidade_pessoas > 8 ):
-	print("O seu veículo está na categoria de habilitação D!")
-elif ( Rodas >= 4 ) and ( Peso > 6000 ):
-	print("O seu veículo está na categoria de habilitação E!")  
+Var
+  rodas : inteiro
+  peso : real
+  qtdPessoas : inteiro
+
+Inicio
+  escreva ("Quantas rodas tem o veículo?")
+  leia (rodas)
+  escreva ("Qual é o peso do veículo?")
+  leia (peso)
+escreva ("Qual é o número de pessoas?")
+  leia (qtdPessoas)
+se (rodas <= 3) entao
+  escreva ("Categoria de habilitação do veículo: A")
+  senao se (rodas == 4) e (qtdPessoas <= 8) e (peso <= 3500) entao
+  escreva ("Categoria de habilitação do veículo: B")
+  senao se (peso >= 3500) e (peso <= 6000) entao
+  escreva ("Categoria de habilitação do veículo: C")
+  senao se (qtdPessoas > 8) entao
+ escreva ("Categoria de habilitação do veículo: D")
+senao se (peso > 6000)
+  escreva ("Categoría de habilitação do veículo: E")
+Fimalgoritmo
